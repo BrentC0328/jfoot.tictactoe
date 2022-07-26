@@ -1,21 +1,17 @@
-# Wombat World
-![](./wombats-world.gif)
+# JFoot Tic Tac Toe Board
 
-![](./wombat-world-simulation.gif)
-* **Purpose**
-  * To establish familiarity with conditional statements
-* **Objective**
-  * Modify the `Wombat` class to collect `leaf` objects
-* **Description**
-  * Your task is to program the Wombat to collect as many `leaf`s as possible.
-  * You should **ONLY CHANGE THE WOMBAT** class.
-  * You should **not** change any other class.
-
-### Background
-* This application is built using the [Jfoot](https://github.com/Git-Leon/jfoot-api) library.
+* **Objective** - To create a tic tac toe board
+* **Purpose** - To gain familiarity with arrays
 
 
-<hr><hr>
+
+
+## Objective
+* Modify the `TicTacToeBoard`'s `act` method to display a winner when a game is over.
+
+
+
+
 ## How to Download
 
 #### Part 1 - Forking the Project
@@ -37,7 +33,7 @@
 
 #### Part 4 - Check Build
 * Ensure that the tests run upon opening the project.
-    * You should see `Tests Failed: 99 of 99 tests`
+  * You should see `Tests Failed: 99 of 99 tests`
 
 
 
@@ -50,12 +46,12 @@
 #### Part 1 -  _Pushing_ local changes to remote repository
 * from a _terminal_ navigate to the root directory of the _cloned_ project.
 * from the root directory of the project, execute the following commands:
-    * add all changes
-      * `git add .`
-    * commit changes to be pushed
-      * `git commit -m 'I have added changes'`
-    * push changes to your repository
-      * `git push -u origin master`
+  * add all changes
+    * `git add .`
+  * commit changes to be pushed
+    * `git commit -m 'I have added changes'`
+  * push changes to your repository
+    * `git push -u origin master`
 
 #### Part 2 - Submitting assignment
 * from the browser, navigate to the _forked_ project from **your** github account.

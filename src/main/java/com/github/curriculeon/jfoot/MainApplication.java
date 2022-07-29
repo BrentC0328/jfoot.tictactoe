@@ -14,7 +14,7 @@ public class MainApplication {
         TicTacToeBoard world = new TicTacToeBoard();
         WorldHandler.getInstance().getWorld();
         Greenfoot.setWorld(world);
-        Greenfoot.setSpeed(25);
+        Greenfoot.setSpeed(100);
         world.populate();
     }
 }

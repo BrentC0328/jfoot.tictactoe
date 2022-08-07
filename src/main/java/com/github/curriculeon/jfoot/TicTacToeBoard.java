@@ -32,10 +32,10 @@ public class TicTacToeBoard extends World {
     }
 
     public Boolean isWinningDiagonallyTopRight(PlayerPiece pieceToEvaluate) {
-        PlayerPiece piece0301 = getObjectsAt(3, 1, PlayerPiece.class).get(0);
-        PlayerPiece piece0202 = getObjectsAt(2, 2, PlayerPiece.class).get(0);
-        PlayerPiece piece0103 = getObjectsAt(1, 3, PlayerPiece.class).get(0);
-        List<PlayerPiece> pieces = Arrays.asList(piece0301, piece0202, piece0103);
+        PlayerPiece piece1 = getObjectsAt(3, 1, PlayerPiece.class).get(0);
+        PlayerPiece piece2 = getObjectsAt(2, 2, PlayerPiece.class).get(0);
+        PlayerPiece piece3 = getObjectsAt(1, 3, PlayerPiece.class).get(0);
+        List<PlayerPiece> pieces = Arrays.asList(piece1, piece2, piece3);
         for(PlayerPiece piece : pieces) {
             Class<?> actualClass = piece.getClass();
             Class<?> expectedClass = pieceToEvaluate.getClass();
@@ -46,32 +46,109 @@ public class TicTacToeBoard extends World {
         return true;
     }
 
-    public Boolean isWinningDiagonallyTopLeft(PlayerPiece piece) {
-        return null;
+    public Boolean isWinningDiagonallyTopLeft(PlayerPiece pieceToEvaluate) {
+        PlayerPiece piece1 = getObjectsAt(1, 1, PlayerPiece.class).get(0);
+        PlayerPiece piece2 = getObjectsAt(2, 2, PlayerPiece.class).get(0);
+        PlayerPiece piece3 = getObjectsAt(3, 3, PlayerPiece.class).get(0);
+        List<PlayerPiece> pieces = Arrays.asList(piece1, piece2, piece3);
+        for(PlayerPiece piece : pieces) {
+            Class<?> actualClass = piece.getClass();
+            Class<?> expectedClass = pieceToEvaluate.getClass();
+            if(!actualClass.equals(expectedClass)) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    public Boolean isWinningTopRow(PlayerPiece piece) {
-        return null;
+    public Boolean isWinningTopRow(PlayerPiece pieceToEvaluate) {
+        PlayerPiece piece1 = getObjectsAt(1, 1, PlayerPiece.class).get(0);
+        PlayerPiece piece2 = getObjectsAt(1, 2, PlayerPiece.class).get(0);
+        PlayerPiece piece3 = getObjectsAt(1, 3, PlayerPiece.class).get(0);
+        List<PlayerPiece> pieces = Arrays.asList(piece1, piece2, piece3);
+        for(PlayerPiece piece : pieces) {
+            Class<?> actualClass = piece.getClass();
+            Class<?> expectedClass = pieceToEvaluate.getClass();
+            if(!actualClass.equals(expectedClass)) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    public Boolean isWinningMiddleRow(PlayerPiece piece) {
-        return null;
+    public Boolean isWinningMiddleRow(PlayerPiece pieceToEvaluate) {
+        PlayerPiece piece1 = getObjectsAt(2, 1, PlayerPiece.class).get(0);
+        PlayerPiece piece2 = getObjectsAt(2, 2, PlayerPiece.class).get(0);
+        PlayerPiece piece3 = getObjectsAt(2, 3, PlayerPiece.class).get(0);
+        List<PlayerPiece> pieces = Arrays.asList(piece1, piece2, piece3);
+        for(PlayerPiece piece : pieces) {
+            Class<?> actualClass = piece.getClass();
+            Class<?> expectedClass = pieceToEvaluate.getClass();
+            if(!actualClass.equals(expectedClass)) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    public Boolean isWinningBottomRow(PlayerPiece piece) {
-        return null;
+    public Boolean isWinningBottomRow(PlayerPiece pieceToEvaluate) {
+        PlayerPiece piece1 = getObjectsAt(3, 1, PlayerPiece.class).get(0);
+        PlayerPiece piece2 = getObjectsAt(3, 2, PlayerPiece.class).get(0);
+        PlayerPiece piece3 = getObjectsAt(3, 3, PlayerPiece.class).get(0);
+        List<PlayerPiece> pieces = Arrays.asList(piece1, piece2, piece3);
+        for(PlayerPiece piece : pieces) {
+            Class<?> actualClass = piece.getClass();
+            Class<?> expectedClass = pieceToEvaluate.getClass();
+            if(!actualClass.equals(expectedClass)) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    public Boolean isWinningLeftColumn(PlayerPiece piece) {
-        return null;
+    public Boolean isWinningLeftColumn(PlayerPiece pieceToEvaluate) {
+        PlayerPiece piece1 = getObjectsAt(1, 1, PlayerPiece.class).get(0);
+        PlayerPiece piece2 = getObjectsAt(1, 2, PlayerPiece.class).get(0);
+        PlayerPiece piece3 = getObjectsAt(1, 3, PlayerPiece.class).get(0);
+        List<PlayerPiece> pieces = Arrays.asList(piece1, piece2, piece3);
+        for(PlayerPiece piece : pieces) {
+            Class<?> actualClass = piece.getClass();
+            Class<?> expectedClass = pieceToEvaluate.getClass();
+            if(!actualClass.equals(expectedClass)) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    public Boolean isWinningMiddleColumn(PlayerPiece playerPiece) {
-        return false;
+    public Boolean isWinningMiddleColumn(PlayerPiece pieceToEvaluate) {
+        PlayerPiece piece1 = getObjectsAt(2, 1, PlayerPiece.class).get(0);
+        PlayerPiece piece2 = getObjectsAt(2, 2, PlayerPiece.class).get(0);
+        PlayerPiece piece3 = getObjectsAt(2, 3, PlayerPiece.class).get(0);
+        List<PlayerPiece> pieces = Arrays.asList(piece1, piece2, piece3);
+        for(PlayerPiece piece : pieces) {
+            Class<?> actualClass = piece.getClass();
+            Class<?> expectedClass = pieceToEvaluate.getClass();
+            if(!actualClass.equals(expectedClass)) {
+                return false;
+            }
+        }
+        return true;
     }
 
-    public Boolean isWinningRightColumn(PlayerPiece piece) {
-        return null;
+    public Boolean isWinningRightColumn(PlayerPiece pieceToEvaluate) {
+        PlayerPiece piece1 = getObjectsAt(3, 1, PlayerPiece.class).get(0);
+        PlayerPiece piece2 = getObjectsAt(3, 2, PlayerPiece.class).get(0);
+        PlayerPiece piece3 = getObjectsAt(3, 3, PlayerPiece.class).get(0);
+        List<PlayerPiece> pieces = Arrays.asList(piece1, piece2, piece3);
+        for(PlayerPiece piece : pieces) {
+            Class<?> actualClass = piece.getClass();
+            Class<?> expectedClass = pieceToEvaluate.getClass();
+            if(!actualClass.equals(expectedClass)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public Boolean isWinning(PlayerPiece playerPiece) {
@@ -90,7 +167,7 @@ public class TicTacToeBoard extends World {
         List<PlayerPiece> pieces = getObjects(PlayerPiece.class);
         for(PlayerPiece piece : pieces) {
             if(isWinning(piece)) {
-                // TODO display winner
+                System.out.println(piece + "Wins");
             }
         }
     }
